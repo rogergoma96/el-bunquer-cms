@@ -24,15 +24,9 @@
       "type": "string",
       "required": true
     },
-    "pageTitle": {
-      "type": "string"
-    },
     "history": {
       "type": "richtext",
       "required": false
-    },
-    "pageDescription": {
-      "type": "string"
     },
     "youtubeUrl": {
       "type": "string",
@@ -62,11 +56,12 @@
       "inversedBy": "episodes"
     },
     "coverImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
